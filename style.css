@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #1e262f);
+    background-size: 200% 200%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.calculator{
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+    pointer-events: none;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 20%);
+    color: #ffffff;
+    font-size: 23px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 17%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 14%);
+}
+
+
+.orangeBtn{
+    background-color: hsl(35, 100%, 55%);
+}
+
+.orangeBtn:hover {
+    background-color: hsl(35, 100%, 45%);
+}
+
+.orangeBtn:active {
+    background-color: hsl(35, 100%, 35%);
+}
+
+.grayBtn{
+    background-color: hsl(0, 0%, 50%);
+    color: black;
+}
+
+.grayBtn:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+.grayBtn:active {
+    background-color: hsl(0, 0%, 30%);
+}
+
+.zeroBtn {
+    width: 140px;
+    border-radius: 30px;
+}
